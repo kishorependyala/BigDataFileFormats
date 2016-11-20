@@ -9,7 +9,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class AvroFactory {
 
-
     private static final AvroFactory instance = new AvroFactory();
     private ConcurrentHashMap<Class<?> , Schema > registry = new ConcurrentHashMap<Class<?>, Schema>();
 

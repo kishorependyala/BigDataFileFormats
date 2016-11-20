@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Avro/Avro.iml" filepath="$PROJECT_DIR$/Avro/Avro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Parquet/Parquet.iml" filepath="$PROJECT_DIR$/Parquet/Parquet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigdatafileformats.iml" filepath="$PROJECT_DIR$/bigdatafileformats.iml" />
     </modules>
   </component>
 </project>
