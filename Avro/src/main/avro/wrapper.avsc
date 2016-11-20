@@ -1,0 +1,71 @@
+{
+  "type": "record",
+  "name": "Wrapper",
+  "namespace": "com.teabreaktechonlogy.avro",
+  "fields": [
+    {
+      "name": "intType",
+      "type": "int"
+    },
+    {
+      "name": "longType",
+      "type": "long"
+    },
+    {
+      "name": "doubleType",
+      "type": "double"
+    },
+    {
+      "name": "risk",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Risk",
+          "fields": [
+            {
+              "name": "intType",
+              "type": [
+                "null",
+                "int"
+              ],
+              "default": null
+            },
+            {
+              "name": "longType",
+              "type": [
+                "null",
+                "long"
+              ],
+              "default": null
+            },
+            {
+              "name": "doubleType",
+              "type": [
+                "null",
+                "double"
+              ],
+              "default": null
+            },
+            {
+              "name": "stringType",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "arrayType",
+      "type": {
+        "type": "array",
+        "items": "int"
+      }
+    }
+  ]
+}
