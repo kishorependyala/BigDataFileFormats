@@ -3,20 +3,20 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.teabreaktechonlogy.avro;
+package com.teabreaktech.avro;
 
 import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Wrapper extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -5823083035290335397L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Wrapper\",\"namespace\":\"com.teabreaktechonlogy.avro\",\"fields\":[{\"name\":\"intType\",\"type\":\"int\"},{\"name\":\"longType\",\"type\":\"long\"},{\"name\":\"doubleType\",\"type\":\"double\"},{\"name\":\"risk\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Risk\",\"fields\":[{\"name\":\"intType\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"longType\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"doubleType\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stringType\",\"type\":[\"null\",\"string\"],\"default\":null}]}],\"default\":null},{\"name\":\"arrayType\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}");
+  private static final long serialVersionUID = 3389108242507195192L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Wrapper\",\"namespace\":\"com.teabreaktech.avro\",\"fields\":[{\"name\":\"intType\",\"type\":\"int\"},{\"name\":\"longType\",\"type\":\"long\"},{\"name\":\"doubleType\",\"type\":\"double\"},{\"name\":\"risk\",\"type\":[\"null\",{\"type\":\"record\",\"name\":\"Risk\",\"fields\":[{\"name\":\"intType\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"longType\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"doubleType\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stringType\",\"type\":[\"null\",\"string\"],\"default\":null}]}],\"default\":null},{\"name\":\"arrayType\",\"type\":{\"type\":\"array\",\"items\":\"int\"}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public int intType;
   @Deprecated public long longType;
   @Deprecated public double doubleType;
-  @Deprecated public com.teabreaktechonlogy.avro.Risk risk;
+  @Deprecated public com.teabreaktech.avro.Risk risk;
   @Deprecated public java.util.List<java.lang.Integer> arrayType;
 
   /**
@@ -34,7 +34,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param risk The new value for risk
    * @param arrayType The new value for arrayType
    */
-  public Wrapper(java.lang.Integer intType, java.lang.Long longType, java.lang.Double doubleType, com.teabreaktechonlogy.avro.Risk risk, java.util.List<java.lang.Integer> arrayType) {
+  public Wrapper(java.lang.Integer intType, java.lang.Long longType, java.lang.Double doubleType, com.teabreaktech.avro.Risk risk, java.util.List<java.lang.Integer> arrayType) {
     this.intType = intType;
     this.longType = longType;
     this.doubleType = doubleType;
@@ -62,7 +62,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
     case 0: intType = (java.lang.Integer)value$; break;
     case 1: longType = (java.lang.Long)value$; break;
     case 2: doubleType = (java.lang.Double)value$; break;
-    case 3: risk = (com.teabreaktechonlogy.avro.Risk)value$; break;
+    case 3: risk = (com.teabreaktech.avro.Risk)value$; break;
     case 4: arrayType = (java.util.List<java.lang.Integer>)value$; break;
     default: throw new org.apache.avro.AvroRuntimeException("Bad index");
     }
@@ -120,7 +120,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * Gets the value of the 'risk' field.
    * @return The value of the 'risk' field.
    */
-  public com.teabreaktechonlogy.avro.Risk getRisk() {
+  public com.teabreaktech.avro.Risk getRisk() {
     return risk;
   }
 
@@ -128,7 +128,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * Sets the value of the 'risk' field.
    * @param value the value to set.
    */
-  public void setRisk(com.teabreaktechonlogy.avro.Risk value) {
+  public void setRisk(com.teabreaktech.avro.Risk value) {
     this.risk = value;
   }
 
@@ -152,8 +152,8 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Wrapper RecordBuilder.
    * @return A new Wrapper RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Wrapper.Builder newBuilder() {
-    return new com.teabreaktechonlogy.avro.Wrapper.Builder();
+  public static com.teabreaktech.avro.Wrapper.Builder newBuilder() {
+    return new com.teabreaktech.avro.Wrapper.Builder();
   }
 
   /**
@@ -161,8 +161,8 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Wrapper RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Wrapper.Builder newBuilder(com.teabreaktechonlogy.avro.Wrapper.Builder other) {
-    return new com.teabreaktechonlogy.avro.Wrapper.Builder(other);
+  public static com.teabreaktech.avro.Wrapper.Builder newBuilder(com.teabreaktech.avro.Wrapper.Builder other) {
+    return new com.teabreaktech.avro.Wrapper.Builder(other);
   }
 
   /**
@@ -170,8 +170,8 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Wrapper RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Wrapper.Builder newBuilder(com.teabreaktechonlogy.avro.Wrapper other) {
-    return new com.teabreaktechonlogy.avro.Wrapper.Builder(other);
+  public static com.teabreaktech.avro.Wrapper.Builder newBuilder(com.teabreaktech.avro.Wrapper other) {
+    return new com.teabreaktech.avro.Wrapper.Builder(other);
   }
 
   /**
@@ -183,8 +183,8 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
     private int intType;
     private long longType;
     private double doubleType;
-    private com.teabreaktechonlogy.avro.Risk risk;
-    private com.teabreaktechonlogy.avro.Risk.Builder riskBuilder;
+    private com.teabreaktech.avro.Risk risk;
+    private com.teabreaktech.avro.Risk.Builder riskBuilder;
     private java.util.List<java.lang.Integer> arrayType;
 
     /** Creates a new Builder */
@@ -196,7 +196,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.teabreaktechonlogy.avro.Wrapper.Builder other) {
+    private Builder(com.teabreaktech.avro.Wrapper.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.intType)) {
         this.intType = data().deepCopy(fields()[0].schema(), other.intType);
@@ -215,7 +215,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
         fieldSetFlags()[3] = true;
       }
       if (other.hasRiskBuilder()) {
-        this.riskBuilder = com.teabreaktechonlogy.avro.Risk.newBuilder(other.getRiskBuilder());
+        this.riskBuilder = com.teabreaktech.avro.Risk.newBuilder(other.getRiskBuilder());
       }
       if (isValidValue(fields()[4], other.arrayType)) {
         this.arrayType = data().deepCopy(fields()[4].schema(), other.arrayType);
@@ -227,7 +227,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Wrapper instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.teabreaktechonlogy.avro.Wrapper other) {
+    private Builder(com.teabreaktech.avro.Wrapper other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.intType)) {
         this.intType = data().deepCopy(fields()[0].schema(), other.intType);
@@ -265,7 +265,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'intType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setIntType(int value) {
+    public com.teabreaktech.avro.Wrapper.Builder setIntType(int value) {
       validate(fields()[0], value);
       this.intType = value;
       fieldSetFlags()[0] = true;
@@ -285,7 +285,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'intType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder clearIntType() {
+    public com.teabreaktech.avro.Wrapper.Builder clearIntType() {
       fieldSetFlags()[0] = false;
       return this;
     }
@@ -303,7 +303,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'longType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setLongType(long value) {
+    public com.teabreaktech.avro.Wrapper.Builder setLongType(long value) {
       validate(fields()[1], value);
       this.longType = value;
       fieldSetFlags()[1] = true;
@@ -323,7 +323,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'longType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder clearLongType() {
+    public com.teabreaktech.avro.Wrapper.Builder clearLongType() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -341,7 +341,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'doubleType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setDoubleType(double value) {
+    public com.teabreaktech.avro.Wrapper.Builder setDoubleType(double value) {
       validate(fields()[2], value);
       this.doubleType = value;
       fieldSetFlags()[2] = true;
@@ -361,7 +361,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'doubleType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder clearDoubleType() {
+    public com.teabreaktech.avro.Wrapper.Builder clearDoubleType() {
       fieldSetFlags()[2] = false;
       return this;
     }
@@ -370,7 +370,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Gets the value of the 'risk' field.
       * @return The value.
       */
-    public com.teabreaktechonlogy.avro.Risk getRisk() {
+    public com.teabreaktech.avro.Risk getRisk() {
       return risk;
     }
 
@@ -379,7 +379,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'risk'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setRisk(com.teabreaktechonlogy.avro.Risk value) {
+    public com.teabreaktech.avro.Wrapper.Builder setRisk(com.teabreaktech.avro.Risk value) {
       validate(fields()[3], value);
       this.riskBuilder = null;
       this.risk = value;
@@ -399,12 +399,12 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
      * Gets the Builder instance for the 'risk' field and creates one if it doesn't exist yet.
      * @return This builder.
      */
-    public com.teabreaktechonlogy.avro.Risk.Builder getRiskBuilder() {
+    public com.teabreaktech.avro.Risk.Builder getRiskBuilder() {
       if (riskBuilder == null) {
         if (hasRisk()) {
-          setRiskBuilder(com.teabreaktechonlogy.avro.Risk.newBuilder(risk));
+          setRiskBuilder(com.teabreaktech.avro.Risk.newBuilder(risk));
         } else {
-          setRiskBuilder(com.teabreaktechonlogy.avro.Risk.newBuilder());
+          setRiskBuilder(com.teabreaktech.avro.Risk.newBuilder());
         }
       }
       return riskBuilder;
@@ -415,7 +415,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
      * @param value The builder instance that must be set.
      * @return This builder.
      */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setRiskBuilder(com.teabreaktechonlogy.avro.Risk.Builder value) {
+    public com.teabreaktech.avro.Wrapper.Builder setRiskBuilder(com.teabreaktech.avro.Risk.Builder value) {
       clearRisk();
       riskBuilder = value;
       return this;
@@ -433,7 +433,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'risk' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder clearRisk() {
+    public com.teabreaktech.avro.Wrapper.Builder clearRisk() {
       risk = null;
       riskBuilder = null;
       fieldSetFlags()[3] = false;
@@ -453,7 +453,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'arrayType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder setArrayType(java.util.List<java.lang.Integer> value) {
+    public com.teabreaktech.avro.Wrapper.Builder setArrayType(java.util.List<java.lang.Integer> value) {
       validate(fields()[4], value);
       this.arrayType = value;
       fieldSetFlags()[4] = true;
@@ -473,7 +473,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'arrayType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Wrapper.Builder clearArrayType() {
+    public com.teabreaktech.avro.Wrapper.Builder clearArrayType() {
       arrayType = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -489,7 +489,7 @@ public class Wrapper extends org.apache.avro.specific.SpecificRecordBase impleme
         if (riskBuilder != null) {
           record.risk = this.riskBuilder.build();
         } else {
-          record.risk = fieldSetFlags()[3] ? this.risk : (com.teabreaktechonlogy.avro.Risk) defaultValue(fields()[3]);
+          record.risk = fieldSetFlags()[3] ? this.risk : (com.teabreaktech.avro.Risk) defaultValue(fields()[3]);
         }
         record.arrayType = fieldSetFlags()[4] ? this.arrayType : (java.util.List<java.lang.Integer>) defaultValue(fields()[4]);
         return record;

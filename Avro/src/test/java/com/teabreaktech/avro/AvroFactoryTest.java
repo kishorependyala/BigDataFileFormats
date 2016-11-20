@@ -1,10 +1,8 @@
-package com.teabreaktechnology.avro;
+package com.teabreaktech.avro;
 
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by kishorekpendyala on 11/20/16.

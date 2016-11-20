@@ -3,15 +3,15 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.teabreaktechonlogy.avro;
+package com.teabreaktech.avro;
 
 import org.apache.avro.specific.SpecificData;
 
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Risk extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3436544642263272848L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Risk\",\"namespace\":\"com.teabreaktechonlogy.avro\",\"fields\":[{\"name\":\"intType\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"longType\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"doubleType\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stringType\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
+  private static final long serialVersionUID = -1365708054974336978L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Risk\",\"namespace\":\"com.teabreaktech.avro\",\"fields\":[{\"name\":\"intType\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"longType\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"doubleType\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"stringType\",\"type\":[\"null\",\"string\"],\"default\":null}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   @Deprecated public java.lang.Integer intType;
   @Deprecated public java.lang.Long longType;
@@ -131,8 +131,8 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
    * Creates a new Risk RecordBuilder.
    * @return A new Risk RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Risk.Builder newBuilder() {
-    return new com.teabreaktechonlogy.avro.Risk.Builder();
+  public static com.teabreaktech.avro.Risk.Builder newBuilder() {
+    return new com.teabreaktech.avro.Risk.Builder();
   }
 
   /**
@@ -140,8 +140,8 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
    * @param other The existing builder to copy.
    * @return A new Risk RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Risk.Builder newBuilder(com.teabreaktechonlogy.avro.Risk.Builder other) {
-    return new com.teabreaktechonlogy.avro.Risk.Builder(other);
+  public static com.teabreaktech.avro.Risk.Builder newBuilder(com.teabreaktech.avro.Risk.Builder other) {
+    return new com.teabreaktech.avro.Risk.Builder(other);
   }
 
   /**
@@ -149,8 +149,8 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
    * @param other The existing instance to copy.
    * @return A new Risk RecordBuilder
    */
-  public static com.teabreaktechonlogy.avro.Risk.Builder newBuilder(com.teabreaktechonlogy.avro.Risk other) {
-    return new com.teabreaktechonlogy.avro.Risk.Builder(other);
+  public static com.teabreaktech.avro.Risk.Builder newBuilder(com.teabreaktech.avro.Risk other) {
+    return new com.teabreaktech.avro.Risk.Builder(other);
   }
 
   /**
@@ -173,7 +173,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.teabreaktechonlogy.avro.Risk.Builder other) {
+    private Builder(com.teabreaktech.avro.Risk.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.intType)) {
         this.intType = data().deepCopy(fields()[0].schema(), other.intType);
@@ -197,7 +197,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
      * Creates a Builder by copying an existing Risk instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.teabreaktechonlogy.avro.Risk other) {
+    private Builder(com.teabreaktech.avro.Risk other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.intType)) {
         this.intType = data().deepCopy(fields()[0].schema(), other.intType);
@@ -230,7 +230,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * @param value The value of 'intType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder setIntType(java.lang.Integer value) {
+    public com.teabreaktech.avro.Risk.Builder setIntType(java.lang.Integer value) {
       validate(fields()[0], value);
       this.intType = value;
       fieldSetFlags()[0] = true;
@@ -250,7 +250,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * Clears the value of the 'intType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder clearIntType() {
+    public com.teabreaktech.avro.Risk.Builder clearIntType() {
       intType = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -269,7 +269,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * @param value The value of 'longType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder setLongType(java.lang.Long value) {
+    public com.teabreaktech.avro.Risk.Builder setLongType(java.lang.Long value) {
       validate(fields()[1], value);
       this.longType = value;
       fieldSetFlags()[1] = true;
@@ -289,7 +289,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * Clears the value of the 'longType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder clearLongType() {
+    public com.teabreaktech.avro.Risk.Builder clearLongType() {
       longType = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -308,7 +308,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * @param value The value of 'doubleType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder setDoubleType(java.lang.Double value) {
+    public com.teabreaktech.avro.Risk.Builder setDoubleType(java.lang.Double value) {
       validate(fields()[2], value);
       this.doubleType = value;
       fieldSetFlags()[2] = true;
@@ -328,7 +328,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * Clears the value of the 'doubleType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder clearDoubleType() {
+    public com.teabreaktech.avro.Risk.Builder clearDoubleType() {
       doubleType = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -347,7 +347,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * @param value The value of 'stringType'.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder setStringType(java.lang.CharSequence value) {
+    public com.teabreaktech.avro.Risk.Builder setStringType(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.stringType = value;
       fieldSetFlags()[3] = true;
@@ -367,7 +367,7 @@ public class Risk extends org.apache.avro.specific.SpecificRecordBase implements
       * Clears the value of the 'stringType' field.
       * @return This builder.
       */
-    public com.teabreaktechonlogy.avro.Risk.Builder clearStringType() {
+    public com.teabreaktech.avro.Risk.Builder clearStringType() {
       stringType = null;
       fieldSetFlags()[3] = false;
       return this;

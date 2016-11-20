@@ -1,7 +1,7 @@
 {
   "type": "record",
   "name": "Wrapper",
-  "namespace": "com.teabreaktechonlogy.avro",
+  "namespace": "com.teabreaktech.avro",
   "fields": [
     {
       "name": "intType",

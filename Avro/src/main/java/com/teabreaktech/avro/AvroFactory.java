@@ -1,9 +1,8 @@
-package com.teabreaktechnology.avro;
+package com.teabreaktech.avro;
 
 import org.apache.avro.Schema;
 import org.apache.avro.SchemaBuilder;
 
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
@@ -13,8 +12,8 @@ public class AvroFactory {
     private ConcurrentHashMap<Class<?> , Schema > registry = new ConcurrentHashMap<Class<?>, Schema>();
 
     private AvroFactory(){
-        register(User.class, getRiskSchema());
-        register(Wrapper.class, getWrapperSchema(getSchema(User.class)));
+        register(Risk.class, getRiskSchema());
+        register(Wrapper.class, getWrapperSchema(getSchema(Risk.class)));
     }
 
     public static AvroFactory get(){
@@ -32,7 +31,7 @@ public class AvroFactory {
     }
 
     private static Schema getRiskSchema(){
-        return SchemaBuilder.record("Risk").namespace("com.teabreaktechonlogy.avro").fields()
+        return SchemaBuilder.record("Risk").namespace("com.teabreaktechnology.avro").fields()
                 .name("intType").type().optional().intType()
                 .name("longType").type().optional().longType()
                 .name("doubleType").type().optional().doubleType()
@@ -42,7 +41,7 @@ public class AvroFactory {
     }
 
     private static Schema getWrapperSchema(Schema riskSchema){
-        return SchemaBuilder.record("Wrapper").namespace("com.teabreaktechonlogy.avro").fields()
+        return SchemaBuilder.record("Wrapper").namespace("com.teabreaktechnology.avro").fields()
                 .name("intType").type().intType().noDefault()
                 .name("longType").type().longType().noDefault()
                 .name("doubleType").type().doubleType().noDefault()
