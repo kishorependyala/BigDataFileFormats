@@ -27,9 +27,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Avro" target="1.6" />
-      <module name="bigdatafileformats" target="1.5" />
-      <module name="Parquet" target="1.5" />
+      <module name="Avro" target="1.8" />
+      <module name="bigdatafileformats" target="1.8" />
+      <module name="Parquet" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
